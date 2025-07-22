@@ -133,19 +133,19 @@ export const Booking: React.FC = () => {
               {/* Date Selection */}
               <div className="mb-6">
                 <p className="mb-3 text-sm font-medium text-slate-700">日付を選択</p>
-                <div className="grid grid-cols-7 gap-2">
+                <div className="grid grid-cols-7 gap-1 sm:gap-2">
                   {weekDays.map(day => (
                     <button
                       key={day.toISOString()}
                       onClick={() => setSelectedDate(day)}
-                      className={`rounded-lg p-2 text-center transition-colors ${
+                      className={`rounded-lg p-1 sm:p-2 text-center transition-colors min-h-[60px] sm:min-h-[70px] ${
                         isSameDay(selectedDate, day)
                           ? 'bg-blue-500 text-white'
                           : 'bg-slate-100 hover:bg-slate-200'
                       }`}
                     >
-                      <p className="text-xs">{['日', '月', '火', '水', '木', '金', '土'][day.getDay()]}</p>
-                      <p className="text-lg font-semibold">{format(day, 'd')}</p>
+                      <p className="text-[10px] sm:text-xs">{['日', '月', '火', '水', '木', '金', '土'][day.getDay()]}</p>
+                      <p className="text-sm sm:text-lg font-semibold">{format(day, 'd')}</p>
                     </button>
                   ))}
                 </div>

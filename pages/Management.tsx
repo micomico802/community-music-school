@@ -42,7 +42,27 @@ export const ManagementPage: React.FC<ManagementPageProps> = ({ role }) => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <div className="overflow-x-auto">
+          {/* Mobile view: Cards */}
+          <div className="block md:hidden space-y-4">
+            {users.map(user => (
+              <div key={user.id} className="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                <div className="flex items-center space-x-3 mb-3">
+                  <img className="h-12 w-12 rounded-full" src={user.avatarUrl} alt={user.name} />
+                  <div>
+                    <p className="font-semibold text-slate-800">{user.name}</p>
+                    <p className="text-sm text-slate-500">{user.email}</p>
+                  </div>
+                </div>
+                <div className="text-sm space-y-1">
+                  <p><span className="font-medium text-slate-700">楽器:</span> {user.instrument}</p>
+                  {role === UserRole.STUDENT && <p><span className="font-medium text-slate-700">レベル:</span> {user.level}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop view: Table */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="min-w-full divide-y divide-slate-200">
               <thead className="bg-slate-50">
                 <tr>

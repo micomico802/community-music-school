@@ -42,7 +42,7 @@ export const Login: React.FC = () => {
             <div className="w-full max-w-md">
                  <div className="text-center mb-6">
                     <Icons.guitar className="mx-auto h-12 w-12 text-black" />
-                    <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900">ハルモ音楽教室</h1>
+                    <h1 className="mt-4 text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">ハルモ音楽教室</h1>
                     <p className="mt-2 text-slate-500">続けるにはサインインしてください</p>
                 </div>
                 <Card>
