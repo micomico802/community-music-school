@@ -1,4 +1,4 @@
-# コミュニティ音楽教室
+# ハルモ音楽教室
 
 音楽教室の生徒、講師、管理者向けの管理システムです。
 
@@ -25,7 +25,7 @@
 
 1. リポジトリをクローン
 ```bash
-git clone https://github.com/yourusername/community-music-school.git
+git clone https://github.com/micomico802/community-music-school.git
 cd community-music-school
 ```
 

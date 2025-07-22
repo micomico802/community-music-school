@@ -46,7 +46,7 @@ const SidebarContent = ({ onLinkClick }) => {
         <div className="flex h-full flex-col bg-black text-white">
             <div className="flex h-16 shrink-0 items-center justify-center border-b border-gray-800">
                 <Icons.guitar className="h-8 w-8 text-white" />
-                <span className="ml-3 text-xl font-semibold">音楽教室</span>
+                <span className="ml-3 text-xl font-semibold">ハルモ音楽教室</span>
             </div>
             <nav className="flex-1 space-y-1 p-4">
                 {navLinks.map((link) => (
