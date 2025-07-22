@@ -39,6 +39,12 @@ npm install
 npm run dev
 ```
 
+## デモサイト
+
+🌐 **ライブデモ**: https://micomico802.github.io/community-music-school/
+
+GitHub Pagesで自動デプロイされています。
+
 ## デモアカウント
 
 - 生徒: misaki@example.com
